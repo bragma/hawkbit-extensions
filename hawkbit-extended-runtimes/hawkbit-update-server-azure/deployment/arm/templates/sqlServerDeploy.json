@@ -82,6 +82,11 @@
                 "dependsOn": [
                     "[parameters('dbServerName')]"
                 ],
+                "sku": {
+                    "name": "Standard",
+                    "tier": "Standard",
+                    "capacity": 10
+                },
                 "properties": {
                     "collation": "SQL_Latin1_General_CP1_CI_AS",
                     "edition": "Basic",

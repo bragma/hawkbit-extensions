@@ -218,7 +218,7 @@
           "Secret": "[parameters('servicePrincipalClientSecret')]"
         },
         "networkProfile": {
-          "loadBalancerSku": "standard",
+          "loadBalancerSku": "basic",
           "networkPlugin": "[parameters('networkPlugin')]",
           "networkPolicy": "[parameters('networkPolicy')]",
           "serviceCidr": "[parameters('serviceCidr')]",
@@ -264,7 +264,7 @@
         "[concat('Microsoft.Resources/deployments/', 'ClusterResourceGroupRoleAssignmentDeployment')]"
       ],
       "sku": {
-        "name": "Standard"
+        "name": "basic"
       },
       "properties": {
         "publicIPAllocationMethod": "Static",

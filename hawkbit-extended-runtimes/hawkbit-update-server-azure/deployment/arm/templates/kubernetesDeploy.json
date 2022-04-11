@@ -263,6 +263,9 @@
       "dependsOn": [
         "[concat('Microsoft.Resources/deployments/', 'ClusterResourceGroupRoleAssignmentDeployment')]"
       ],
+      "sku": {
+        "name": "Standard"
+      },
       "properties": {
         "publicIPAllocationMethod": "Static",
         "dnsSettings": {

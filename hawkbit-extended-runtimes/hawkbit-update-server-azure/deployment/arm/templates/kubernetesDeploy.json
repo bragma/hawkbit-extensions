@@ -218,6 +218,7 @@
           "Secret": "[parameters('servicePrincipalClientSecret')]"
         },
         "networkProfile": {
+          "loadBalancerSku": "standard",
           "networkPlugin": "[parameters('networkPlugin')]",
           "networkPolicy": "[parameters('networkPolicy')]",
           "serviceCidr": "[parameters('serviceCidr')]",
